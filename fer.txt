@@ -1,0 +1,45 @@
+Write patient record to data/record.txt
+
+Run encryption:
+
+
+
+python encryption/encrypt.py
+
+
+Start Ganache
+
+Deploy contract:
+
+
+
+python scripts/deploy_contract.py
+
+Approve doctor and access data:
+
+
+
+python scripts/interact.py
+Doctor decrypts:
+
+python encryption/decrypt.py
+
+
+
+
+
+pip install -r requirements.txt
+python -m solcx.install v0.8.0
+
+Fernet is a symmetric encryption method, meaning the same key is used to encrypt and decrypt data.
+
+It uses:
+
+AES-128 in CBC mode (for encryption)
+
+HMAC with SHA256 (for integrity/authentication)
+
+PKCS7 padding
+
+Includes a timestamp and IV (initialization vector) in its output
+
